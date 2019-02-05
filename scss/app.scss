@@ -67,6 +67,10 @@ $text-color-red: #f05054;
 $text-color-yellow: #ffc947;
 $margin-bottom-map: 275px;
 
+html{
+    width:100%;
+}
+
 .button-footer {
     font-family: 'Dosis', sans-serif;
     font-style: normal;
@@ -117,6 +121,8 @@ $margin-bottom-map: 275px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .btn-map:hover {
@@ -160,20 +166,20 @@ $margin-bottom-map: 275px;
 
 
 .rond-rouge {
-    background: url('../img/rond-rouge.png');
-    background-repeat: no-repeat;
-    width: 217px;
-    height: 217px;
+    background-color: #f05054;
+    border-radius: 50%;
+    width: 317px;
+    height: 317px;
     text-align: center;
     color: white;
     font-size: 13px;
 }
 
 .rond-marron {
-    background: url('../img/rond-marron.png');
-    background-repeat: no-repeat;
-    width: 161px;
-    height: 161px;
+    background-color: #ddb146;
+    border-radius: 50%;
+    width: 261px;
+    height: 261px;
     text-align: center;
     color: white;
     font-size: 13px;
@@ -181,21 +187,39 @@ $margin-bottom-map: 275px;
 
 #block-arbre {
     position: absolute;
-    top: -80px;
+    top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
+    width: 71%;
     p {
         position: absolute;
         top: 154px;
         right: 165px;
     }
+    img{
+        width: 100%;
+    }
 }
 
 header {
+    #logo-bas{
+        margin-left: 9%;
+        width: 11%;
+        margin-top: 16px;
+    }
+    #logo-rive-gauche{
+        margin-top: 65px;
+    }
     .triangle-1 {
         position: absolute;
         top: 150px;
         left: 0px;
+    }
+    .logo-subtitle{
+        font-size: 20px;
+        font-family: 'Prata', serif;
+        color: #c2b181;
+        margin-bottom: 80px;
     }
     #block-triangle-top {
         position: relative;
@@ -214,24 +238,25 @@ header {
     }
     #block-rond {
         position: relative;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 28%;
+        padding-left: 20%;
         .rond-marron {
             position: absolute;
-            top: -45px;
-            left: 185px;
+            top: -98px;
+            left: 450px;
         }
         .logo-env {
             position: absolute;
-            bottom: -20px;
-            left: 215px;
+            bottom: -37px;
+            left: 53%;
+            width: 12%;
 
         }
         .triangle-4 {
-            z-index: -1;
+            z-index: 1;
             position: absolute;
-            bottom: -75px;
-            right: 180px;
+            bottom: -70px;
+            right: 235px;
         }
     }
     #block-text-header {
@@ -243,8 +268,7 @@ header {
 }
 
 #fauteuil-formululaire {
-    position: relative;
-    bottom: 315px;
+    margin-top: -4%;
     z-index: -2;
     .img-fauteuil {
         width: 55.5%;
@@ -266,6 +290,14 @@ header {
             border: 1px solid #f05054;
             border-radius: 50%;
         }
+    }
+    #contact-form{
+        background-color: white;
+        border-radius: 2%;
+        margin-top: -77%;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -297,6 +329,9 @@ header {
         ul {
             list-style-image: url("../img/puce.jpg");
         }
+    }
+    .video-youtube{
+        height: 450px;
     }
 }
 
