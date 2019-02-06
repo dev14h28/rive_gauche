@@ -359,6 +359,23 @@ header {
         }
     }
     form {
+        input[type="text"]:valid{
+            content: "✓";
+            color: green;
+        }
+        .input-label-novalid {
+            position: relative;
+            i{
+                display: none;
+            }
+        }
+        
+        .input-label-novalid .fa-check {
+            color: #49c349;
+            top: 13px;
+            right: 150px;
+            position: absolute;
+        }
         color: black;
         input {
             border: 1px solid #f05054;

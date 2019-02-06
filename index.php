@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 include_once('config.php');
 
@@ -200,6 +200,7 @@ if (isset($_POST['nom'])
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
@@ -291,25 +292,37 @@ if (isset($_POST['nom'])
                             <label>Nom*</label>
                         </div>
                         <div class="marge-right medium-9 small-9 cell">
-                            <input type="text" name="nom" required>
+                            <label class="input-label-novalid">
+                                <i class="fas fa-check fa-2x"></i>
+                                <input type="text" name="nom" required>
+                            </label>
                         </div>
                         <div class="medium-3 small-3 cell text-right">
                             <label>Prénom*</label>
                         </div>
                         <div class="marge-right medium-9 small-9 cell">
-                            <input type="text" name="prenom" required>
+                            <label class="input-label-novalid">
+                                <i class="fas fa-check fa-2x"></i>
+                                <input type="text" name="prenom" required>
+                            </label>
                         </div>
                         <div class="medium-3 small-3 cell text-right">
                             <label>Téléphone*</label>
                         </div>
                         <div class="marge-right medium-9 small-9 cell">
-                            <input type="tel" name="tel" required>
+                            <label class="input-label-novalid">
+                                <i class="fas fa-check fa-2x"></i>
+                                <input type="tel" name="tel" required>
+                            </label>
                         </div>
                         <div class="medium-3 small-3 cell text-right">
                             <label for="middle-label">Email*</label>
                         </div>
                         <div class="marge-right medium-9 small-9 cell">
-                            <input type="email" id="middle-label" name="mail" required>
+                            <label class="input-label-novalid">
+                                <i class="fas fa-check fa-2x"></i>
+                                <input type="email" id="middle-label" name="mail" required>
+                            </label>
                         </div>
                         <div class="medium-3 small-3 cell text-right">
                             <label>Commentaire :</label>
@@ -535,6 +548,8 @@ if (isset($_POST['nom'])
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
