@@ -213,18 +213,18 @@ if (isset($_POST['type_location'])
                 <div class="rond-rouge opensans">
                     <br>
                     <br>
-                    <span class="text-uppercase font-bold ">Frais de notaire<br>
+                    <span class="text-uppercase font-bold rond-txt1">Frais de notaire<br>
             offerts**</span>
-                    <p>pour les 5 premiers<br> réservataires</p>
-                    <p class="t∂ext-uppercase font-color-yellow">Offre valable jusqu'au<br>
+                    <p class="rond-txt2">pour les 5 premiers<br> réservataires</p>
+                    <p class="text-uppercase font-color-yellow rond-txt3">Offre valable jusqu'au<br>
                         15/02/2019 !</p>
                 </div>
                 <div class="rond-marron opensans">
                     <br>
                     <br>
                     <br>
-                    <span class="px14">à partir de offerts*</span>
-                    <p class="font-bold px35">106 000€*</p>
+                    <span class="px14 rond-txt1">à partir de</span>
+                    <p class="font-bold rond-txt2">106 000€*</p>
                 </div>
                 <img src="img/triangle/triangle-4.png" class="triangle-4">
             </div>
