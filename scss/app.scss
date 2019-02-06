@@ -359,6 +359,10 @@ header {
         }
     }
     form {
+        input[type="text"]:valid{
+            content: "✓";
+            color: green;
+        }
         color: black;
         input {
             border: 1px solid #f05054;
