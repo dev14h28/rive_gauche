@@ -318,6 +318,7 @@ header {
 }
 
 #fauteuil-formululaire {
+    position: relative;
     margin-top: -4%;
     z-index: -2;
     .img-fauteuil {
@@ -332,7 +333,7 @@ header {
         background-color: white;
         min-height: 360px;
         width: 42%;
-        top: 1700px;
+        top: 570px;
         left: 4%;
         border-radius: 16px;
         overflow: visible;
