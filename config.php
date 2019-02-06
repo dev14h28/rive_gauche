@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $bdd = 'rive_gauche';
-$passwd = 'root';
+$passwd = '';
 /*
 mysql_connect($host,$user,$passwd) or die("erreur de connexion au serveur $host");
 mysql_select_db($bdd) or die("erreur de connexion a la base de donnees");*/
@@ -19,5 +19,5 @@ if (!$conn->set_charset("utf8")) {
 } else {
     //printf("Jeu de caractères courant : %s\n", $conn->character_set_name());
 }
-
+*/
 ?>

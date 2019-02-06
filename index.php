@@ -5,16 +5,37 @@ error_reporting(E_ALL);
 
 include_once('config.php');
 
-if (isset($_POST['type_location'])
-        && isset($_POST['nom'])
+if (isset($_POST['nom'])
         && isset($_POST['prenom'])
         && isset($_POST['tel'])
         && isset($_POST['mail'])
 ) {
 
     $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
     $email = $_POST['mail'];
     $telephone = $_POST['tel'];
+    if(isset($POST["checkbox1"])){
+        $type2 = 1;
+    }else{
+        $type2 = 0;
+    }
+    if(isset($POST["checkbox2"])){
+        $type3 = 1;
+    }
+    else{
+        $type3 = 0;
+    }
+    if(isset($POST["checkbox3"])){
+        $info_comm = 1;
+    }else{
+        $info_comm = 0;
+    }
+    if(isset($POST["checkbox3"])){
+        $data_perso = 1;
+    }else{
+        $data_perso = 0;
+    }
     $message = '';
 
     if (isset($_POST['commentaire'])) {
@@ -35,15 +56,17 @@ if (isset($_POST['type_location'])
     '".mysqli_real_escape_string($conn,$message)."')"; */
 
     $sql = "INSERT INTO formulaire 
-    (type_location, civilite, nom, email, code_postal, telephone, message)
+    (Nom, Prenom, Telephone, Email, Commentaire, Type2, Type3, Info_comm, Data_personnel)
     VALUES 
-    ('" . mysqli_real_escape_string($conn, $type_location) . "',
-    '" . mysqli_real_escape_string($conn, $civilite) . "',
-    '" . mysqli_real_escape_string($conn, $nom) . "',
-    '" . mysqli_real_escape_string($conn, $email) . "',
-    '" . mysqli_real_escape_string($conn, $code_postal) . "',
+    ('" . mysqli_real_escape_string($conn, $nom) . "',
+    '" . mysqli_real_escape_string($conn, $prenom) . "',
     '" . mysqli_real_escape_string($conn, $telephone) . "',
-    '" . mysqli_real_escape_string($conn, $message) . "')";
+    '" . mysqli_real_escape_string($conn, $email) . "',
+    '" . mysqli_real_escape_string($conn, $message) . "',
+    '" . mysqli_real_escape_string($conn, $type2) . "',
+    '" . mysqli_real_escape_string($conn, $type3) . "',
+    '" . mysqli_real_escape_string($conn, $info_comm) . "',
+    '" . mysqli_real_escape_string($conn, $data_perso) . "')";
 
     if ($conn->query($sql) === TRUE) {
 
@@ -53,7 +76,7 @@ if (isset($_POST['type_location'])
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
         // En-têtes additionnels
-        $headers[] = 'From: FASTT Confiance Bailleur <noreply@fastt.com>';
+        $headers[] = 'From: Pierres Territoire <noreply@fastt.com>';
 
         // Envoi du document à l'utilisateur
         //if($telecharger == 1){
@@ -61,7 +84,7 @@ if (isset($_POST['type_location'])
         $to = $email; // notez la virgule
 
         // Sujet
-        $subject = 'FASTT Confiance Bailleur';
+        $subject = 'Pierres Territoire';
 
         // message
         /* $message_doc = '
@@ -94,7 +117,7 @@ if (isset($_POST['type_location'])
         $to_form = ''; // notez la virgule
 
         // Sujet
-        $subject_form = 'FASTT Confiance Bailleur // Formulaire En savoir plus';
+        $subject_form = 'Pierres Territoire // Formulaire Question RiveGauche';
         /* if($telecharger == 1){
             $telecharger_message = "Oui";
         }else{
@@ -131,9 +154,9 @@ if (isset($_POST['type_location'])
         $message_form = '
          <html>
           <body>
-            <p>Nouveau formulaire saisi par : ' . htmlentities($civilite) . ' ' . htmlentities($nom) . '</p>
-           <p><br />Code postal : ' . htmlentities($code_postal) . '</p>
+            <p>Nouveau formulaire saisi par : ' . htmlentities($prenom) . ' ' . htmlentities($nom) . '</p>
            <p>Email : ' . htmlentities($email) . '</p>
+           <p>Telephone : ' . htmlentities($telephone) . '</p>
            <p>Message : ' . htmlentities($message) . '</p>
           </body>
          </html>
@@ -141,7 +164,6 @@ if (isset($_POST['type_location'])
 
         // Envoi
         mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
-
 
         echo "Success";
     } else {
@@ -161,7 +183,7 @@ if (isset($_POST['type_location'])
         echo "Failed";
     }*/
 } else {
-    //echo "Failed";
+    echo "Failed";
 }
 ?>
 
