@@ -265,54 +265,54 @@ if( isset($_POST['type_location'])
                         <p class="font-weight-light">Demande d'informations pour le programme : Rive Gauche</p>
                     </div>
                     <div class="grid-x grid-margin-x align-middle">
-                        <div class="medium-2 cell text-right">
+                        <div class="medium-3 cell text-right">
                             <label>Nom*</label>
                         </div>
-                        <div class="medium-10 cell">
+                        <div class="marge-right medium-9 cell">
                             <input type="text" name="nom" required>
                         </div>
-                        <div class="medium-2 cell text-right">
+                        <div class="medium-3 cell text-right">
                             <label>Prénom*</label>
                         </div>
-                        <div class="medium-10 cell">
+                        <div class="marge-right medium-9 cell">
                             <input type="text" name="prenom" required>
                         </div>
-                        <div class="medium-2 cell text-right">
+                        <div class="medium-3 cell text-right">
                             <label>Téléphone*</label>
                         </div>
-                        <div class="medium-10 cell">
+                        <div class="marge-right medium-9 cell">
                             <input type="tel" name="tel" required>
                         </div>
-                        <div class="medium-2 cell text-right">
+                        <div class="medium-3 cell text-right">
                             <label for="middle-label">Email*</label>
                         </div>
-                        <div class="medium-10 cell">
+                        <div class="marge-right medium-9 cell">
                             <input type="email" id="middle-label" name="mail" required>
                         </div>
-                        <div class="medium-2 cell text-right">
+                        <div class="medium-3 cell text-right">
                             <label>Commentaire :</label>
                         </div>
-                        <div class="medium-10 cell">
+                        <div class="medium-9 cell">
                             <textarea name="commentaire"></textarea>
                         </div>
 
-                        <div class="medium-12 cell"><input id="checkbox1" type="checkbox"><label for="checkbox1"><span
+                        <div class="medium-12 cell"><input id="checkbox1" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox1"><span
                                 class="font-bold">Type 2</span> Avec Balcon et place de parking à partir de 106 000
                             €*</label></div>
-                        <div class="medium-12 cell"><input id="checkbox2" type="checkbox"><label for="checkbox2"><span
+                        <div class="medium-12 cell"><input id="checkbox2" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox2"><span
                                 class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de parking à partir
                             de 157 000 €*</label>
                         </div>
-                        <div class="medium-12 cell"><input id="checkbox3" type="checkbox"><label for="checkbox3"><span
+                        <div class="medium-12 cell"><input id="checkbox3" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox3"><span
                                 class="font-bold">Type 4</span> Avec terrasse et 2 places de parking à partir de 233
                             000€*</label>
                         </div>
                         <input type="submit" class="btn-map" value="Ce programme m'intéresse">
                         <div class="medium-12 cell">
-                            <input id="checkbox4" type="checkbox" /><label for="checkbox4">J'accepte de recevoir des informations commerciales de la part de Pierres & Territoires de France Nord</label>
+                            <input id="checkbox4" class='black-checkbox' type="checkbox" /><label for="checkbox4">J'accepte de recevoir des informations commerciales de la part de Pierres & Territoires de France Nord</label>
                         </div>
                         <div class="medium-12 cell">
-                            <input id="checkbox5" type="checkbox" /><label for="checkbox5">J'accepte que les données personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de traitement de ma demande et soient enregistrées dans le respect des dispositions du RGPD. </label>
+                            <input id="checkbox5" class='black-checkbox' type="checkbox" /><label for="checkbox5">J'accepte que les données personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de traitement de ma demande et soient enregistrées dans le respect des dispositions du RGPD. </label>
                         </div>
                     </div>
                 </form>
