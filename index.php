@@ -187,7 +187,7 @@ if (isset($_POST['type_location'])
 <body>
 
 <div id="contact" class="dosis">
-    <a href="tel:0359611744" class="text-uppercase">Contactez-nous au : 03 59 61 17 44</a>
+    <a href="tel:0359611744" class="text-uppercase">Contactez-nous au : 03 61 58 46 78</a>
 </div>
 
 <header>
@@ -217,7 +217,7 @@ if (isset($_POST['type_location'])
             offerts**</span>
                     <p class="rond-txt2">pour les 5 premiers<br> réservataires</p>
                     <p class="text-uppercase font-color-yellow rond-txt3">Offre valable jusqu'au<br>
-                        15/02/2019 !</p>
+                        06/03/2019 !</p>
                 </div>
                 <div class="rond-marron opensans">
                     <br>
@@ -226,7 +226,6 @@ if (isset($_POST['type_location'])
                     <span class="px14 rond-txt1">à partir de</span>
                     <p class="font-bold rond-txt2">106 000€*</p>
                 </div>
-                <img src="img/logo-env.png" class="logo-env">
                 <img src="img/triangle/triangle-4.png" class="triangle-4">
             </div>
         </div>
@@ -309,12 +308,6 @@ if (isset($_POST['type_location'])
                                         class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de parking à
                                 partir
                                 de 157 000 €*</label>
-                        </div>
-                        <div class="medium-12 cell"><input id="checkbox3" class='red-checkbox' type="checkbox"><label
-                                    class="label-checkbox" for="checkbox3"><span
-                                        class="font-bold">Type 4</span> Avec terrasse et 2 places de parking à partir de
-                                233
-                                000€*</label>
                         </div>
                         <input type="submit" class="btn-map" value="Ce programme m'intéresse">
                         <div class="medium-12 cell">
@@ -411,7 +404,7 @@ if (isset($_POST['type_location'])
                         commerces de proximité (400 commerçants dont 180 dans le centre-ville)</p>
                 </div>
                 <div id="btn-contact" class="cell large-5 medium-12">
-                    <a href="tel:0359611744" class="text-uppercase btn-map">Contactez-nous au : 03 59 61 17 44</a>
+                    <a href="tel:0359611744" class="text-uppercase btn-map">Contactez-nous au : 03 61 58 46 78</a>
                 </div>
             </div>
         </div>
@@ -434,7 +427,7 @@ if (isset($_POST['type_location'])
                             aides de la MEL déduites. La TVA à 5.5%, les aides de la MEL sont soumises à conditions de
                             ressources et réservées aux logements à usage de résidence principale. ** Offre valable du
                             14/01/2019 au 06/03/2019 pour les 5 premiers clients personnes physiques avec lesquels sera
-                            signé un contrat de réservation mentionnant l’offre avant le 15/02/2019 suivi de la
+                            signé un contrat de réservation mentionnant l’offre avant le 06/03/2019 suivi de la
                             signature
                             d’un acte de vente portant sur un appartement du programme Rive Gauche à Armentières. Les «
                             frais de notaires » seront pris en charge par le vendeur et correspondent aux honoraires et
