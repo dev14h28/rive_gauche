@@ -550,6 +550,32 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    #block-info {
+        background-image: url('../img/fauteuil.png');
+
+        position: unset!important;
+        width: unset!important;
+        .block-info-txt3 {
+            padding: unset!important;
+        }
+        .block-info-txt2 {
+            padding: unset!important;
+        }
+    }
+    #fauteuil-formululaire form input[type="text"], #fauteuil-formululaire form input[type="email"], #fauteuil-formululaire form input[type="tel"], #fauteuil-formululaire form textarea {
+        width: 100%;
+    }
+    #fauteuil-formululaire {
+        #contact-form {
+            border-radius: unset!important;
+            margin-top: unset!important;
+            width: unset!important;
+            padding: 15px;
+        }
+    }
+    .img-fauteuil {
+        display: none;
+    }
     .btn-map {
         padding: 15px 10px;
     }
