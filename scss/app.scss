@@ -271,6 +271,7 @@ header {
         margin-top: 115px;
         display: flex;
         justify-content: center;
+        z-index: 1;
         .rond-marron {
             position: relative;
             top: -98px;
@@ -302,7 +303,7 @@ header {
 
         }
         .triangle-4 {
-            z-index: 1;
+            z-index: -1;
             position: absolute;
             bottom: -128px;
             right: 132px;
@@ -318,7 +319,6 @@ header {
 }
 
 #fauteuil-formululaire {
-    position: relative;
     margin-top: -4%;
     z-index: -2;
     .img-fauteuil {
@@ -333,7 +333,7 @@ header {
         background-color: white;
         min-height: 360px;
         width: 42%;
-        top: 570px;
+        top: 1700px;
         left: 4%;
         border-radius: 16px;
         overflow: visible;
