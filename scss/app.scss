@@ -67,9 +67,6 @@ $text-color-red: #f05054;
 $text-color-yellow: #ffc947;
 $margin-bottom-map: 275px;
 
-html{
-    width:100%;
-}
 
 .button-footer {
     font-family: 'Dosis', sans-serif;
@@ -242,7 +239,7 @@ header {
     }
     #block-rond {
         position: relative;
-        margin-top: 28%;
+        margin-top: 115px;
         padding-left: 20%;
         .rond-marron {
             position: absolute;
@@ -287,7 +284,7 @@ header {
         background-color: white;
         height: 360px;
         width: 42%;
-        top: 1850px;
+        top: 1700px;
         left: 4%;
         border-radius: 16px;
         overflow: visible;
@@ -504,10 +501,63 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    .btn-map {
+        padding: 15px 10px;
+    }
     #container-map {
         margin-bottom: unset;
         #block-map {
             bottom: unset;
         }
     }
+    header {
+        #block-rond {
+            margin-top: 20%;
+        }
+        .rond-rouge {
+            width: 190px;
+            height: 190px;
+        }
+        .rond-marron {
+            width: 160px;
+            height: 160px;
+        }
+        .triangle-4 {
+            display: none;
+        }
+        #block-arbre {
+            margin-top: 150px;
+            background-image: url('../img/arbre1.png');
+            background-size: cover;
+            position: unset;
+            width: unset;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .arbre-1 {
+                display: none;
+            }
+            p {
+                position: unset;
+                background-color: rgba(255,255,255,0.7);
+                padding: 15px;
+                border-radius: 15px;
+            }
+        }
+    }
+    footer {
+        #footer-finish {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        .padding-3 {
+            padding: 1rem!important;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
 }
