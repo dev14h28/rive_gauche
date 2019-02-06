@@ -271,6 +271,7 @@ header {
         margin-top: 115px;
         display: flex;
         justify-content: center;
+        z-index: 1;
         .rond-marron {
             position: relative;
             top: -98px;
@@ -302,7 +303,7 @@ header {
 
         }
         .triangle-4 {
-            z-index: 1;
+            z-index: -1;
             position: absolute;
             bottom: -128px;
             right: 132px;
