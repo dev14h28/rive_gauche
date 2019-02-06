@@ -4,25 +4,25 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include_once('config.php');
- 
-if( isset($_POST['type_location']) 
-       && isset($_POST['civilite']) 
-       && isset($_POST['nom']) 
-       && isset($_POST['email']) 
-       && isset($_POST['code_postal']) 
-      ){
-    
+
+if (isset($_POST['type_location'])
+        && isset($_POST['civilite'])
+        && isset($_POST['nom'])
+        && isset($_POST['email'])
+        && isset($_POST['code_postal'])
+) {
+
     $type_location = $_POST['type_location'];
     $civilite = $_POST['civilite'];
     $nom = $_POST['nom'];
     $email = $_POST['email'];
     $code_postal = $_POST['code_postal'];
-    $telephone = ''; 
+    $telephone = '';
     $message = '';
     /* if(isset($_POST['telephone'])){
         $telephone = $_POST['telephone'];
     } */
-    if(isset($_POST['message'])){
+    if (isset($_POST['message'])) {
         $message = $_POST['message'];
     }
     /* $sql = "INSERT INTO formulaire
@@ -42,46 +42,45 @@ if( isset($_POST['type_location'])
     $sql = "INSERT INTO formulaire 
     (type_location, civilite, nom, email, code_postal, telephone, message)
     VALUES 
-    ('".mysqli_real_escape_string($conn,$type_location)."',
-    '".mysqli_real_escape_string($conn,$civilite)."',
-    '".mysqli_real_escape_string($conn,$nom)."',
-    '".mysqli_real_escape_string($conn,$email)."',
-    '".mysqli_real_escape_string($conn,$code_postal)."',
-    '".mysqli_real_escape_string($conn,$telephone)."',
-    '".mysqli_real_escape_string($conn,$message)."')";
-    
+    ('" . mysqli_real_escape_string($conn, $type_location) . "',
+    '" . mysqli_real_escape_string($conn, $civilite) . "',
+    '" . mysqli_real_escape_string($conn, $nom) . "',
+    '" . mysqli_real_escape_string($conn, $email) . "',
+    '" . mysqli_real_escape_string($conn, $code_postal) . "',
+    '" . mysqli_real_escape_string($conn, $telephone) . "',
+    '" . mysqli_real_escape_string($conn, $message) . "')";
+
     if ($conn->query($sql) === TRUE) {
-        
-        
 
-         // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-         $headers[] = 'MIME-Version: 1.0';
-         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-         // En-têtes additionnels
-         $headers[] = 'From: FASTT Confiance Bailleur <noreply@fastt.com>';
-        
+        // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+        // En-têtes additionnels
+        $headers[] = 'From: FASTT Confiance Bailleur <noreply@fastt.com>';
+
         // Envoi du document à l'utilisateur
         //if($telecharger == 1){
         // Plusieurs destinataires
-        $to  = $email; // notez la virgule
+        $to = $email; // notez la virgule
 
-         // Sujet
-         $subject = 'FASTT Confiance Bailleur';
+        // Sujet
+        $subject = 'FASTT Confiance Bailleur';
 
-         // message
-         /* $message_doc = '
-         <html>
-          <body>
-            <p>Nous vous remercions sinc&egrave;rement pour l&apos;int&eacute;r&ecirc;t que vous portez &agrave; FASTT Confiance Bailleur.</p>
-           <p>Vous pouvez consulter ou t&eacute;l&eacute;charger le document qui d&eacute;taille les garanties et b&eacute;n&eacute;fices du service pour les propri&eacute;taires, en cliquant sur ce lien : <a href="https://fr.calameo.com/read/0052240807e2e672c5ff0" target="_blank">https://fr.calameo.com/read/0052240807e2e672c5ff0</a></p>
-           <p>Et si vous avez besoin d&apos;un conseil ou simplement une question, n&apos;h&eacute;sitez pas appeler nos conseillers au 0 809 400 668 (service gratuit + prix de l&apos;appel).</p>
-           <p>L&apos;&eacute;quipe FASTT Confiance Bailleur vous souhaite une tr&egrave;s belle journ&eacute;e</p>
-          </body>
-         </html>
-         '; */
+        // message
+        /* $message_doc = '
+        <html>
+         <body>
+           <p>Nous vous remercions sinc&egrave;rement pour l&apos;int&eacute;r&ecirc;t que vous portez &agrave; FASTT Confiance Bailleur.</p>
+          <p>Vous pouvez consulter ou t&eacute;l&eacute;charger le document qui d&eacute;taille les garanties et b&eacute;n&eacute;fices du service pour les propri&eacute;taires, en cliquant sur ce lien : <a href="https://fr.calameo.com/read/0052240807e2e672c5ff0" target="_blank">https://fr.calameo.com/read/0052240807e2e672c5ff0</a></p>
+          <p>Et si vous avez besoin d&apos;un conseil ou simplement une question, n&apos;h&eacute;sitez pas appeler nos conseillers au 0 809 400 668 (service gratuit + prix de l&apos;appel).</p>
+          <p>L&apos;&eacute;quipe FASTT Confiance Bailleur vous souhaite une tr&egrave;s belle journ&eacute;e</p>
+         </body>
+        </html>
+        '; */
 
-         $message_doc = '
+        $message_doc = '
          <html>
           <body>
            <p>Votre formulaire a &eacute;t&eacute; envoy&eacute; avec succ&egrave;s.</p>
@@ -91,65 +90,65 @@ if( isset($_POST['type_location'])
          ';
 
 
-         // Envoi
-         mail($to, $subject, $message_doc, implode("\r\n", $headers));
+        // Envoi
+        mail($to, $subject, $message_doc, implode("\r\n", $headers));
         //}
-        
+
         // Envoi du formulaire par mail
         // Plusieurs destinataires
-         $to_form  = ''; // notez la virgule
+        $to_form = ''; // notez la virgule
 
-         // Sujet
-         $subject_form = 'FASTT Confiance Bailleur // Formulaire En savoir plus';
-            /* if($telecharger == 1){
-                $telecharger_message = "Oui";
-            }else{
-                $telecharger_message = "Non";
-            }
-            if($preference_tel == 1){
-                $preference_tel_message = "Oui";
-            }else{
-                $preference_tel_message = "Non";
-            }
-            if($preference_email == 1){
-                $preference_email_message = "Oui";
-            }else{
-                $preference_email_message = "Non";
-            } */
-         // message
-         /* $message_old = '
-         <html>
-          <body>
-            <p>Nouveau formulaire saisi par : '.htmlentities($civilite).' '.htmlentities($nom).'</p>
-           <!--<p>La location : '.htmlentities($type_location).'</p> -->
-           <!--<p>La personne souhaite t&eacute;l&eacute;charger la documentation : '.$telecharger_message.'</p>-->
-           <p>Les pr&eacute;f&eacute;rences de contact : </p>
-           <p>T&eacute;l&eacute;phone : '.$preference_tel_message.'</p>
-           <!-- <p>Email : '.$preference_email_message.'</p>-->
-           <p><br />Code postal : '.htmlentities($code_postal).'</p>
-           <!--<p>T&eacute;l&eacute;phone : '.htmlentities($telephone).'</p>-->
-           <p>Email : '.htmlentities($email).'</p>
-           <p>Message : '.htmlentities($message).'</p>
-          </body>
-         </html>
-         '; */
+        // Sujet
+        $subject_form = 'FASTT Confiance Bailleur // Formulaire En savoir plus';
+        /* if($telecharger == 1){
+            $telecharger_message = "Oui";
+        }else{
+            $telecharger_message = "Non";
+        }
+        if($preference_tel == 1){
+            $preference_tel_message = "Oui";
+        }else{
+            $preference_tel_message = "Non";
+        }
+        if($preference_email == 1){
+            $preference_email_message = "Oui";
+        }else{
+            $preference_email_message = "Non";
+        } */
+        // message
+        /* $message_old = '
+        <html>
+         <body>
+           <p>Nouveau formulaire saisi par : '.htmlentities($civilite).' '.htmlentities($nom).'</p>
+          <!--<p>La location : '.htmlentities($type_location).'</p> -->
+          <!--<p>La personne souhaite t&eacute;l&eacute;charger la documentation : '.$telecharger_message.'</p>-->
+          <p>Les pr&eacute;f&eacute;rences de contact : </p>
+          <p>T&eacute;l&eacute;phone : '.$preference_tel_message.'</p>
+          <!-- <p>Email : '.$preference_email_message.'</p>-->
+          <p><br />Code postal : '.htmlentities($code_postal).'</p>
+          <!--<p>T&eacute;l&eacute;phone : '.htmlentities($telephone).'</p>-->
+          <p>Email : '.htmlentities($email).'</p>
+          <p>Message : '.htmlentities($message).'</p>
+         </body>
+        </html>
+        '; */
 
         $message_form = '
          <html>
           <body>
-            <p>Nouveau formulaire saisi par : '.htmlentities($civilite).' '.htmlentities($nom).'</p>
-           <p><br />Code postal : '.htmlentities($code_postal).'</p>
-           <p>Email : '.htmlentities($email).'</p>
-           <p>Message : '.htmlentities($message).'</p>
+            <p>Nouveau formulaire saisi par : ' . htmlentities($civilite) . ' ' . htmlentities($nom) . '</p>
+           <p><br />Code postal : ' . htmlentities($code_postal) . '</p>
+           <p>Email : ' . htmlentities($email) . '</p>
+           <p>Message : ' . htmlentities($message) . '</p>
           </body>
          </html>
          ';
 
-         // Envoi
-         mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
-        
-        
-        echo "Success"; 
+        // Envoi
+        mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
+
+
+        echo "Success";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
         echo "Failed";
@@ -158,15 +157,15 @@ if( isset($_POST['type_location'])
     /*    
     mysql_query($query) or trigger_error(mysql_error() . $query);
     mysql_close();*/
-        /*if($_POST['username'] == $username && $_POST['password'] == $password){ // Si les infos correspondent...
-            session_start();
-            $_SESSION['user'] = $username;
-            echo "Success";    
-        }
-        else{ // Sinon
-            echo "Failed";
-        }*/
-    }else{
+    /*if($_POST['username'] == $username && $_POST['password'] == $password){ // Si les infos correspondent...
+        session_start();
+        $_SESSION['user'] = $username;
+        echo "Success";
+    }
+    else{ // Sinon
+        echo "Failed";
+    }*/
+} else {
     //echo "Failed";
 }
 ?>
@@ -195,7 +194,7 @@ if( isset($_POST['type_location'])
     <img src="img/triangle/triangle-1.png" class="triangle-1" alt="">
     <img id="logo-bas" src="img/logo-bas.png" alt="">
     <div class="grid-x">
-        <div class="cell medium-5 text-center">
+        <div class="cell medium-12 large-5 small-12 text-center">
             <div id="block-triangle-top" class="hide-for-small-only">
                 <img src="img/triangle/triangle-2.png" class="triangle-2">
                 <img src="img/triangle/triangle-3.png" class="triangle-3">
@@ -231,22 +230,20 @@ if( isset($_POST['type_location'])
                 <img src="img/triangle/triangle-4.png" class="triangle-4">
             </div>
         </div>
-        <div class="cell medium-6">
-            &nbsp;
+        <div class="cell large-6 medium-12 small-12">
+            <div id="block-arbre">
+                <img src="img/arbre1.png" class="arbre-1">
+                <p class="text-center">
+                    <span class="prata font-color-or-fonce px24">Devenez propriétaire</span><br>
+                    <span class="prata px36 font-color-or font-bold">en bord<br>
+                        de Lys</span><br>
+                    <span class="opensans">Prenez PLACE...<br>
+                    Ici la nature vous accueille à bras ouvert</span>
+                </p>
+            </div>
         </div>
     </div>
 </header>
-
-<div id="block-arbre">
-    <img src="img/arbre1.png" alt="">
-    <p class="text-center">
-        <span class="prata font-color-or-fonce px24">Devenez propriétaire</span><br>
-        <span class="prata px36 font-color-or font-bold">en bord<br>
-                        de Lys</span><br>
-        <span class="opensans">Prenez PLACE...<br>
-                    Ici la nature vous accueille à bras ouvert</span>
-    </p>
-</div>
 <div id="fauteuil-formululaire" class="opensans">
     <img src="img/fauteuil.png" class="img-fauteuil">
     <div>
@@ -296,23 +293,37 @@ if( isset($_POST['type_location'])
                             <textarea name="commentaire"></textarea>
                         </div>
 
-                        <div class="medium-12 cell"><input id="checkbox1" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox1"><span
-                                class="font-bold">Type 2</span> Avec Balcon et place de parking à partir de 106 000
-                            €*</label></div>
-                        <div class="medium-12 cell"><input id="checkbox2" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox2"><span
-                                class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de parking à partir
-                            de 157 000 €*</label>
+                        <div class="medium-12 cell"><input id="checkbox1" class='red-checkbox' type="checkbox"><label
+                                    class="label-checkbox" for="checkbox1"><span
+                                        class="font-bold">Type 2</span> Avec Balcon et place de parking à partir de 106
+                                000
+                                €*</label></div>
+                        <div class="medium-12 cell"><input id="checkbox2" class='red-checkbox' type="checkbox"><label
+                                    class="label-checkbox" for="checkbox2"><span
+                                        class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de parking à
+                                partir
+                                de 157 000 €*</label>
                         </div>
-                        <div class="medium-12 cell"><input id="checkbox3" class='red-checkbox' type="checkbox"><label class="label-checkbox" for="checkbox3"><span
-                                class="font-bold">Type 4</span> Avec terrasse et 2 places de parking à partir de 233
-                            000€*</label>
+                        <div class="medium-12 cell"><input id="checkbox3" class='red-checkbox' type="checkbox"><label
+                                    class="label-checkbox" for="checkbox3"><span
+                                        class="font-bold">Type 4</span> Avec terrasse et 2 places de parking à partir de
+                                233
+                                000€*</label>
                         </div>
                         <input type="submit" class="btn-map" value="Ce programme m'intéresse">
                         <div class="medium-12 cell">
-                            <input id="checkbox4" class='black-checkbox' type="checkbox" /><label for="checkbox4">J'accepte de recevoir des informations commerciales de la part de Pierres & Territoires de France Nord</label>
+                            <input id="checkbox4" class='black-checkbox' type="checkbox"/><label for="checkbox4">J'accepte
+                                de recevoir des informations commerciales de la part de Pierres & Territoires de France
+                                Nord</label>
                         </div>
                         <div class="medium-12 cell">
-                            <input id="checkbox5" class='black-checkbox' type="checkbox" /><label for="checkbox5">J'accepte que les données personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de traitement de ma demande et soient enregistrées dans le respect des dispositions du RGPD. </label>
+                            <input id="checkbox5" class='black-checkbox' type="checkbox"/><label for="checkbox5">J'accepte
+                                que les données personnelles saisies dans le formulaire ci-dessus soient collectées par
+                                Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété
+                                exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS
+                                Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de
+                                traitement de ma demande et soient enregistrées dans le respect des dispositions du
+                                RGPD. </label>
                         </div>
                     </div>
                 </form>

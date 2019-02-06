@@ -3,12 +3,12 @@
 $host = 'localhost';
 $user = 'root';
 $bdd = 'rive_gauche';
-$passwd = '';
+$passwd = 'root';
 /*
 mysql_connect($host,$user,$passwd) or die("erreur de connexion au serveur $host");
 mysql_select_db($bdd) or die("erreur de connexion a la base de donnees");*/
 
-$conn = new mysqli($host, $user, $passwd, $bdd);
+/* $conn = new mysqli($host, $user, $passwd, $bdd);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }

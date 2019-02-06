@@ -16,8 +16,12 @@
   "dependencies": {
     "foundation-sites": "^6.5.1",
     "gulp-cli": "^2.0.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-error-notifier": "^1.1.0",
+    "gulp-livereload": "^4.0.1",
     "jquery": ">=3.0.0",
     "motion-ui": "~2.0.0",
+    "undertaker": "^1.2.0",
     "what-input": "^5.1.2"
   },
   "devDependencies": {
