@@ -359,10 +359,6 @@ header {
         }
     }
     form {
-        input[type="text"]:valid{
-            content: "✓";
-            color: green;
-        }
         .input-label-novalid {
             position: relative;
             i{
@@ -373,7 +369,7 @@ header {
         .input-label-novalid .fa-check {
             color: #49c349;
             top: 13px;
-            right: 150px;
+            right: 100px;
             position: absolute;
         }
         color: black;
