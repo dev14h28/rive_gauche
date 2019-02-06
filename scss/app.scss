@@ -96,6 +96,8 @@ html{
 }
 .font-color-orange {
     color: #f1585c;
+    font-size: 28px;
+    padding-top: 45px;
 }
 
 .font-color-or {
@@ -123,6 +125,8 @@ html{
     border-radius: 8px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .btn-map:hover {
@@ -276,16 +280,57 @@ header {
     }
     iframe {
         width: 100%;
+        height: 500px;
+    }
+    #block-info{
+        position: absolute;
+        background-color: white;
+        height: 360px;
+        width: 42%;
+        top: 1850px;
+        left: 4%;
+        border-radius: 16px;
+        overflow: visible;
+        .triangle-block-info{
+            position: absolute;
+            width: 28%;
+            right: -9%;
+            top: -29%;
+        }
+        .block-info-txt1{
+            font-size: 25px;
+            color: #0082a9;
+            margin-top: 50px;
+        }
+        .block-info-txt2{
+            font-size: 23px;
+            padding: 0px 120px 0px 120px;
+        }
+        .block-info-txt3{
+            padding: 0px 160px 0px 160px;
+            color: #4a3a00;
+            font-size: 16px;        
+        }
     }
     form {
         color: black;
         input {
             border: 1px solid #f05054;
         }
+        .btn-map{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
         input[type="text"], input[type="email"], input[type="tel"], textarea {
             width: 330px;
             border-radius: 10px;
             border: 1px solid #f05054;
+        }
+        textarea{
+            height: 162px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"]{
+            height: 50px;
         }
         .red-checkbox {
             margin-top: 17px;
@@ -295,31 +340,36 @@ header {
             background-color: white;
             border-radius: 50%;
             vertical-align: middle;
-            border: 1px solid #f05054;;
+            border: 1px solid #f05054;
             -webkit-appearance: none;
             outline: none;
             cursor: pointer;
         }
         .red-checkbox:checked {
-            background-color: #f05054;
+            border: 2px solid #f05054;
         }
         .label-checkbox{
             font-size: 13px;
+        }
+        .label-checkbox2{
+            font-size: 11px;
         }
         .red-checkbox:checked:before {
             content: "";
             display: block;
             position: relative;
-            top: 3px;
-            left: 3px;
-            width: 13px;
-            height: 13px;
+            top: 1.5px;
+            left: 1.5px;
+            width: 14px;
+            height: 14px;
+            border: 1px solid white;
             border-radius: 50%;
-            background: white;
+            background: #f05054;
         }
         .black-checkbox {
             width: 1em;
             height: 1em;
+            margin-top: 8px;
             background-color: white;
             border-radius: 50%;
             vertical-align: middle;
@@ -337,10 +387,11 @@ header {
             position: relative;
             top: 2px;
             left: 2px;
-            width: 10px;
-            height: 10px;
+            width: 11px;
+            height: 11px;
+            border: 2px solid white;
             border-radius: 50%;
-            background: white;
+            background: black;
         }
     }
     #contact-form{
@@ -385,9 +436,6 @@ header {
         ul {
             list-style-image: url("../img/puce.jpg");
         }
-    }
-    .video-youtube{
-        height: 450px;
     }
 }
 

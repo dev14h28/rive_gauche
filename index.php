@@ -224,8 +224,8 @@ if( isset($_POST['type_location'])
                     <br>
                     <br>
                     <br>
-                    <span class="">à partir de offerts*</span>
-                    <p class="font-bold px20">106 000€*</p>
+                    <span class="px14">à partir de offerts*</span>
+                    <p class="font-bold px35">106 000€*</p>
                 </div>
                 <img src="img/logo-env.png" class="logo-env">
                 <img src="img/triangle/triangle-4.png" class="triangle-4">
@@ -249,10 +249,16 @@ if( isset($_POST['type_location'])
 </div>
 <div id="fauteuil-formululaire" class="opensans">
     <img src="img/fauteuil.png" class="img-fauteuil">
+    <div id="block-info" class="text-center">
+        <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
+        <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
+        <p class="block-info-txt2" >Des appartements conçus pour offrir un maximum d'espace dans les pièces à vivre.</p>
+        <p class="block-info-txt3" >Les larges ouvertures et une luminosité optimale renforcent l'impression de bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles sur les jardins et/ou surla Lys.</p>
+    </div>
     <div>
         <div class="grid-x">
             <div class="cell medium-6 large-6">
-                <iframe height="375" src="https://www.youtube.com/embed/lMB-6uO64eU" frameborder="0"
+                <iframe class="video-youtube" height="375" src="https://www.youtube.com/embed/lMB-6uO64eU" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
@@ -309,11 +315,21 @@ if( isset($_POST['type_location'])
                         </div>
                         <input type="submit" class="btn-map" value="Ce programme m'intéresse">
                         <div class="medium-12 cell">
-                            <input id="checkbox4" class='black-checkbox' type="checkbox" /><label for="checkbox4">J'accepte de recevoir des informations commerciales de la part de Pierres & Territoires de France Nord</label>
-                        </div>
-                        <div class="medium-12 cell">
-                            <input id="checkbox5" class='black-checkbox' type="checkbox" /><label for="checkbox5">J'accepte que les données personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de traitement de ma demande et soient enregistrées dans le respect des dispositions du RGPD. </label>
-                        </div>
+                            <div class="grid-x">
+                                <div class="medium-1 cell">
+                                    <input id="checkbox4" class='black-checkbox' type="checkbox" />
+                                </div>
+                                <div class="medium-11 cell">
+                                    <label class="label-checkbox2" for="checkbox4">J'accepte de recevoir des informations commerciales de la part de Pierres & Territoires de France Nord</label>
+                                </div>
+                                <div class="medium-1 cell">
+                                    <input id="checkbox5" class='black-checkbox' type="checkbox" />
+                                </div>
+                                <div class="medium-11 cell">
+                                    <label class="label-checkbox2" for="checkbox5">J'accepte que les données personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres et territoires de France Nord, société du Groupe Procivis Nord, propriété exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000 €, RCS Lille 306 854 779 Siège social : 7 Rue de Tenremonde à LILLE (59000) à des fins de traitement de ma demande et soient enregistrées dans le respect des dispositions du RGPD. </label>
+                                </div>
+                            </div>
+                        <div>
                     </div>
                 </form>
             </div>
