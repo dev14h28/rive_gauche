@@ -15,23 +15,23 @@ if (isset($_POST['nom'])
     $prenom = $_POST['prenom'];
     $email = $_POST['mail'];
     $telephone = $_POST['tel'];
-    if(isset($POST["checkbox1"])){
+    if(isset($_POST["checkbox1"])){
         $type2 = 1;
     }else{
         $type2 = 0;
     }
-    if(isset($POST["checkbox2"])){
+    if(isset($_POST["checkbox2"])){
         $type3 = 1;
     }
     else{
         $type3 = 0;
     }
-    if(isset($POST["checkbox3"])){
+    if(isset($_POST["checkbox3"])){
         $info_comm = 1;
     }else{
         $info_comm = 0;
     }
-    if(isset($POST["checkbox3"])){
+    if(isset($_POST["checkbox4"])){
         $data_perso = 1;
     }else{
         $data_perso = 0;
@@ -76,7 +76,7 @@ if (isset($_POST['nom'])
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
         // En-têtes additionnels
-        $headers[] = 'From: Pierres Territoire <noreply@fastt.com>';
+        $headers[] = 'From: Pierres Territoire <noreply@test.com>';
 
         // Envoi du document à l'utilisateur
         //if($telecharger == 1){
@@ -165,10 +165,10 @@ if (isset($_POST['nom'])
         // Envoi
         mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
 
-        echo "Success";
+        // echo "Success";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-        echo "Failed";
+        // echo "Error: " . $sql . "<br>" . $conn->error;
+        // echo "Failed";
     }
     $conn->close();
     /*    
@@ -183,7 +183,7 @@ if (isset($_POST['nom'])
         echo "Failed";
     }*/
 } else {
-    echo "Failed";
+    // echo "Failed";
 }
 ?>
 
@@ -321,7 +321,7 @@ if (isset($_POST['nom'])
                         <div class="medium-12 small-12 cell grid-margin-x grid-margin-y">
                             <div class="grid-x">
                                 <div class="cell medium-3 small-3">
-                                    <input id="checkbox1" class='red-checkbox' type="checkbox">
+                                    <input id="checkbox1" name="checkbox1" class='red-checkbox' type="checkbox">
                                 </div>
                                 <div class="cell medium-9 small-9">
                                     <label
@@ -332,7 +332,7 @@ if (isset($_POST['nom'])
                                 </div>
 
                                 <div class="cell medium-3 small-3">
-                                    <input id="checkbox2" class='red-checkbox' type="checkbox">
+                                    <input id="checkbox2" name="checkbox2" class='red-checkbox' type="checkbox">
                                 </div>
                                 <div class="cell medium-9 small-9">
                                     <label
@@ -347,18 +347,18 @@ if (isset($_POST['nom'])
                         <div class="medium-12 cell">
                             <div class="grid-x">
                                 <div class="medium-1 small-1 cell">
-                                    <input id="checkbox4" class='black-checkbox' type="checkbox"/>
+                                    <input id="checkbox3" name="checkbox3" class='black-checkbox' type="checkbox"/>
                                 </div>
                                 <div class="medium-11 small-11 cell">
-                                    <label class="label-checkbox2" for="checkbox4">J'accepte de recevoir des
+                                    <label class="label-checkbox2" for="checkbox3">J'accepte de recevoir des
                                         informations commerciales de la part de Pierres & Territoires de France
                                         Nord</label>
                                 </div>
                                 <div class="medium-1 small-1 cell">
-                                    <input id="checkbox5" class='black-checkbox' type="checkbox"/>
+                                    <input id="checkbox4" class='black-checkbox' type="checkbox"/>
                                 </div>
                                 <div class="medium-11 small-11 cell">
-                                    <label class="label-checkbox2" for="checkbox5">J'accepte que les données
+                                    <label class="label-checkbox2" name="checkbox4" for="checkbox4">J'accepte que les données
                                         personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres
                                         et territoires de France Nord, société du Groupe Procivis Nord, propriété
                                         exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000
@@ -367,8 +367,8 @@ if (isset($_POST['nom'])
                                         dispositions du RGPD. </label>
                                 </div>
                             </div>
-                            <div>
-                            </div>
+                        <div>
+                    </div>
                 </form>
             </div>
 
