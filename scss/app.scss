@@ -176,7 +176,6 @@ $margin-bottom-map: 275px;
     font-size: 13px;
     .rond-txt1{
         margin: auto;
-        position: absolute;
         top: 60px;
         left: -200px;
         bottom: 0;
@@ -185,7 +184,6 @@ $margin-bottom-map: 275px;
     }
     .rond-txt2{
         margin: auto;
-        position: absolute;
         top: 131px;
         left: -200px;
         bottom: 0;
@@ -194,7 +192,6 @@ $margin-bottom-map: 275px;
     }
     .rond-txt3{
         margin: auto;
-        position: absolute;
         top: 196px;
         left: -200px;
         bottom: 0;
@@ -272,11 +269,12 @@ header {
     #block-rond {
         position: relative;
         margin-top: 115px;
-        padding-left: 20%;
+        display: flex;
+        justify-content: center;
         .rond-marron {
-            position: absolute;
+            position: relative;
             top: -98px;
-            left: 450px;
+            right: 50px;
             .rond-txt1{
                 margin: auto;
                 position: absolute;
@@ -569,6 +567,15 @@ footer {
             padding-left: unset;
 
         }
+        .rond-txt1{
+            font-size: unset!important;
+        }
+        .rond-txt2{
+            font-size: unset!important;
+        }
+        .rond-txt3{
+            font-size: unset!important;
+        }
         .logo-env {
             bottom: 0px;
             position: absolute;
@@ -589,6 +596,9 @@ footer {
             position: relative!important;
             right: 50px!important;
             left:unset!important;
+            span, p {
+                position: unset!important;
+            }
         }
         .triangle-4 {
             display: none;
