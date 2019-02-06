@@ -194,7 +194,7 @@ if (isset($_POST['type_location'])
     <img src="img/triangle/triangle-1.png" class="triangle-1" alt="">
     <img id="logo-bas" src="img/logo-bas.png" alt="">
     <div class="grid-x">
-        <div class="cell medium-12 large-5 small-12 align-item-center">
+        <div class="cell medium-12 large-5 small-12 align-item-center text-center">
             <div id="block-triangle-top" class="hide-for-small-only">
                 <img src="img/triangle/triangle-2.png" class="triangle-2">
                 <img src="img/triangle/triangle-3.png" class="triangle-3">
