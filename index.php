@@ -195,8 +195,6 @@ if (isset($_POST['nom'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
