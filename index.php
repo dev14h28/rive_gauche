@@ -108,7 +108,7 @@ if (isset($_POST['nom'])
 
 
         // Envoi
-        mail($to, $subject, $message_doc, implode("\r\n", $headers));
+        //mail($to, $subject, $message_doc, implode("\r\n", $headers));
         //}
 
         // Envoi du formulaire par mail
@@ -162,9 +162,10 @@ if (isset($_POST['nom'])
          ';
 
         // Envoi
-        mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
+        //mail($to_form, $subject_form, $message_form, implode("\r\n", $headers));
 
-        // echo "Success";
+        $success = true;
+
     } else {
         // echo "Error: " . $sql . "<br>" . $conn->error;
         // echo "Failed";
@@ -197,6 +198,7 @@ if (isset($_POST['nom'])
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -555,7 +557,20 @@ if (isset($_POST['nom'])
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
+
+    <?php 
+
+    if(isset($success)){ ?>
+
+        <script>
+            toastr.success('Votre demande de contact a bien été prise en compte .', 'Demande de contact envoyé', {"positionClass": "toast-top-right"});
+        </script>
+
+    <?php } ?>
+
+    ?>
 </body>
 </html>
