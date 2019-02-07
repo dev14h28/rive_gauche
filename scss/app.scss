@@ -406,7 +406,6 @@ header {
             height: 50px;
         }
         .red-checkbox {
-            margin-top: 17px;
             margin-left: 67px;
             width: 1.3em;
             height: 1.3em;
@@ -613,6 +612,9 @@ footer {
         #container-block-flotant {
             width: 100%;
         }
+        #img-video {
+            height: 345px;
+        }
 
     }
     #fauteuil-formululaire form input[type="text"], #fauteuil-formululaire form input[type="email"], #fauteuil-formululaire form input[type="tel"], #fauteuil-formululaire form textarea {
@@ -712,6 +714,11 @@ footer {
         }
         .padding-3 {
             padding: 1rem!important;
+        }
+    }
+    form {
+        .text-right {
+            text-align: unset!important;
         }
     }
 }

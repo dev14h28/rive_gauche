@@ -267,7 +267,7 @@ if (isset($_POST['nom'])
         <div id="container-block-flotant">
             <div id="block-info" class="text-center">
                 <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
-                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
+                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 3 pièces avec parking.</p>
                 <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
                     vivre.</p>
                 <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
@@ -332,7 +332,7 @@ if (isset($_POST['nom'])
                             <textarea name="commentaire"></textarea>
                         </div>
 
-                        <div class="medium-12 small-12 cell grid-margin-x grid-margin-y">
+                        <div class="medium-12 small-12 cell grid-margin-x grid-margin-y margin-top-2">
                             <div class="grid-x">
                                 <div class="cell medium-3 small-3">
                                     <input id="checkbox1" name="checkbox1" class='red-checkbox' type="checkbox">
