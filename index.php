@@ -434,8 +434,10 @@ if (isset($_POST['nom'])
     </div>
 
     <div id="container-map" class="margin-top-3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7506.908820165147!2d2.8693017611676863!3d50.693163101405815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcd6f04f567831%3A0xc230400941d729a0!2s112+Rue+du+N%2C+59280+Armenti%C3%A8res!5e0!3m2!1sfr!2sfr!4v1549293810245"
-                height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div style="width: 100%; overflow: hidden; height: 400px;">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yfGkjCUSW290aZpuuEaken12S8Fz_VSv"
+                height="400" frameborder="0" style="border:0; margin-top: -100px;" allowfullscreen></iframe>
+            </div>
         <div class="grid-container">
             <div class="grid-x align-justify">
                 <div id="block-map" class="cell large-5 medium-12 text-center padding-3">
