@@ -193,7 +193,7 @@ if (isset($_POST['nom'])
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Pierres Territoires</title>
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -228,14 +228,11 @@ if (isset($_POST['nom'])
                 et le
                 bonheur des enfants...</p>
             <div id="block-rond">
-                <div class="rond-rouge opensans">
-                    <br>
-                    <br>
-                    <span class="text-uppercase font-bold rond-txt1">Frais de notaire<br>
-            offerts**</span>
-                    <p class="rond-txt2">pour les 5 premiers<br> réservataires</p>
-                    <p class="text-uppercase font-color-yellow rond-txt3">Offre valable jusqu'au<br>
-                        06/03/2019 !</p>
+                    <div class="rond-rouge opensans">
+                        <p><span class="text-uppercase font-bold rond-txt1">Frais de notaire<br>
+            offerts**</span><br>
+                        pour les 5 premiers<br> réservataires<br>
+                            <span class="text-uppercase font-color-yellow rond-txt3">Offre valable jusqu'au<br>06/03/2019 !</span></p>
                 </div>
                 <div class="rond-marron opensans">
                     <br>
@@ -271,14 +268,15 @@ if (isset($_POST['nom'])
                 <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
                     vivre.</p>
                 <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
-                    bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles
+                    bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues
+                    exceptionnelles
                     sur
                     les jardins et/ou surla Lys.</p>
             </div>
         </div>
         <div class="grid-x">
             <div id="youtube" class="cell medium-6 large-6 small-12">
-                <img id="img-video" src="img/video.jpg" />
+                <img id="img-video" src="img/video.jpg"/>
             </div>
             <div id="formulaire" class="cell medium-6 large-6 small-12">
                 <form method="POST" id="contact-form">
@@ -442,8 +440,9 @@ if (isset($_POST['nom'])
     <div id="container-map" class="margin-top-3">
         <div style="width: 100%; overflow: hidden; height: 400px;">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yfGkjCUSW290aZpuuEaken12S8Fz_VSv"
-                height="400" frameborder="0" scrolling="no" style="border:0; margin-top: -100px;" allowfullscreen></iframe>
-            </div>
+                    height="400" frameborder="0" scrolling="no" style="border:0; margin-top: -100px;"
+                    allowfullscreen></iframe>
+        </div>
         <div class="grid-container">
             <div class="grid-x align-justify">
                 <div id="block-map" class="cell large-5 medium-12 text-center padding-3">
@@ -561,9 +560,9 @@ if (isset($_POST['nom'])
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
 
-    <?php 
+    <?php
 
-    if(isset($success)){ ?>
+    if (isset($success)) { ?>
 
         <script>
             toastr.success('Votre demande de contact a bien été prise en compte .', 'Demande de contact envoyé', {"positionClass": "toast-top-right"});

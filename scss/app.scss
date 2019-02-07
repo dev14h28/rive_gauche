@@ -176,6 +176,9 @@ $margin-bottom-map: 275px;
     text-align: center;
     color: white;
     font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .rond-txt1{
         margin: auto;
         top: 60px;
