@@ -265,7 +265,7 @@ if (isset($_POST['nom'])
         <div id="container-block-flotant">
             <div id="block-info" class="text-center">
                 <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
-                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
+                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 3 pièces avec parking.</p>
                 <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
                     vivre.</p>
                 <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
