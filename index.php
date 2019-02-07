@@ -15,25 +15,24 @@ if (isset($_POST['nom'])
     $prenom = $_POST['prenom'];
     $email = $_POST['mail'];
     $telephone = $_POST['tel'];
-    if(isset($_POST["checkbox1"])){
+    if (isset($_POST["checkbox1"])) {
         $type2 = 1;
-    }else{
+    } else {
         $type2 = 0;
     }
-    if(isset($_POST["checkbox2"])){
+    if (isset($_POST["checkbox2"])) {
         $type3 = 1;
-    }
-    else{
+    } else {
         $type3 = 0;
     }
-    if(isset($_POST["checkbox3"])){
+    if (isset($_POST["checkbox3"])) {
         $info_comm = 1;
-    }else{
+    } else {
         $info_comm = 0;
     }
-    if(isset($_POST["checkbox4"])){
+    if (isset($_POST["checkbox4"])) {
         $data_perso = 1;
-    }else{
+    } else {
         $data_perso = 0;
     }
     $message = '';
@@ -198,7 +197,8 @@ if (isset($_POST['nom'])
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
@@ -261,15 +261,19 @@ if (isset($_POST['nom'])
 </header>
 <div id="fauteuil-formululaire" class="opensans">
     <img src="img/fauteuil.png" class="img-fauteuil">
-    <div id="block-info" class="text-center">
-        <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
-        <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
-        <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à vivre.</p>
-        <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
-            bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles sur
-            les jardins et/ou surla Lys.</p>
-    </div>
     <div>
+        <div id="container-block-flotant">
+            <div id="block-info" class="text-center">
+                <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
+                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
+                <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
+                    vivre.</p>
+                <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
+                    bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles
+                    sur
+                    les jardins et/ou surla Lys.</p>
+            </div>
+        </div>
         <div class="grid-x">
             <div id="youtube" class="cell medium-6 large-6 small-12">
                 <iframe class="video-youtube" height="375" src="https://www.youtube.com/embed/lMB-6uO64eU"
@@ -337,7 +341,8 @@ if (isset($_POST['nom'])
                                 <div class="cell medium-9 small-9">
                                     <label
                                             class="label-checkbox" for="checkbox1"><span
-                                                class="font-bold">Type 2</span> Avec Balcon et place de parking à partir de 106
+                                                class="font-bold">Type 2</span> Avec Balcon et place de parking à partir
+                                        de 106
                                         000
                                         €*</label>
                                 </div>
@@ -348,7 +353,8 @@ if (isset($_POST['nom'])
                                 <div class="cell medium-9 small-9">
                                     <label
                                             class="label-checkbox" for="checkbox2"><span
-                                                class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de parking à
+                                                class="font-bold">Type 3</span> Avec Balcon ou terrasse et 2 places de
+                                        parking à
                                         partir
                                         de 157 000 €*</label>
                                 </div>
@@ -369,7 +375,8 @@ if (isset($_POST['nom'])
                                     <input id="checkbox4" class='black-checkbox' type="checkbox"/>
                                 </div>
                                 <div class="medium-11 small-11 cell">
-                                    <label class="label-checkbox2" name="checkbox4" for="checkbox4">J'accepte que les données
+                                    <label class="label-checkbox2" name="checkbox4" for="checkbox4">J'accepte que les
+                                        données
                                         personnelles saisies dans le formulaire ci-dessus soient collectées par Pierres
                                         et territoires de France Nord, société du Groupe Procivis Nord, propriété
                                         exclusive de : Pierres et territoires de France Nord SAS au capital de 6 858 000
@@ -378,8 +385,8 @@ if (isset($_POST['nom'])
                                         dispositions du RGPD. </label>
                                 </div>
                             </div>
-                        <div>
-                    </div>
+                            <div>
+                            </div>
                 </form>
             </div>
 
