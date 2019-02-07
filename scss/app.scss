@@ -328,13 +328,19 @@ header {
         width: 100%;
         height: 500px;
     }
+    #container-block-flotant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
     #block-info{
         position: absolute;
         background-color: white;
-        min-height: 360px;
+        max-height: 850px;
         width: 45%;
-        top: 1500px;
-        left: 35px;
+        top: 1680px;
         border-radius: 16px;
         padding: 15px;
         display: flex;
@@ -566,7 +572,8 @@ footer {
 @media screen and (max-width: 1024px) {
     #block-info {
         background-image: url('../img/fauteuil.png');
-
+        background-size: cover;
+        border-radius: unset!important;
         position: unset !important;
         width: unset !important;
         .block-info-txt3 {
@@ -576,10 +583,19 @@ footer {
             padding: unset !important;
         }
     }
+    #container-block-flotant {
+        width: 100%;
+    }
+    #block-info {
+        width: 100%;
+    }
 
     #fauteuil-formululaire {
         #youtube, #formulaire {
             width: 100%!important;
+        }
+        #container-block-flotant {
+            width: 100%;
         }
 
     }
@@ -685,12 +701,5 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    #block-info {
-        position: absolute;
-        background-color: white;
-        min-height: 360px;
-        width: 42%;
-        top: 1500px;
-    }
 
 }
