@@ -332,11 +332,14 @@ header {
         position: absolute;
         background-color: white;
         min-height: 360px;
-        width: 42%;
-        top: 1700px;
-        left: 4%;
+        width: 45%;
+        top: 1500px;
+        left: 35px;
         border-radius: 16px;
-        overflow: visible;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .triangle-block-info{
             position: absolute;
             width: 28%;
@@ -346,16 +349,13 @@ header {
         .block-info-txt1{
             font-size: 25px;
             color: #0082a9;
-            margin-top: 50px;
         }
         .block-info-txt2{
             font-size: 23px;
-            padding: 0px 120px 0px 120px;
         }
         .block-info-txt3{
-            padding: 0px 160px 0px 160px;
             color: #4a3a00;
-            font-size: 16px;        
+            font-size: 16px;
         }
     }
     form {
@@ -685,5 +685,12 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+    #block-info {
+        position: absolute;
+        background-color: white;
+        min-height: 360px;
+        width: 42%;
+        top: 1500px;
+    }
 
 }
