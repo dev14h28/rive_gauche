@@ -276,10 +276,7 @@ if (isset($_POST['nom'])
         </div>
         <div class="grid-x">
             <div id="youtube" class="cell medium-6 large-6 small-12">
-                <iframe class="video-youtube" height="375" src="https://www.youtube.com/embed/lMB-6uO64eU"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <img id="img-video" src="img/video.jpg" />
             </div>
             <div id="formulaire" class="cell medium-6 large-6 small-12">
                 <form method="POST" id="contact-form">

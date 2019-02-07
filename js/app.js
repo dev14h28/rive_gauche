@@ -25,3 +25,9 @@ $("[type='email']").keyup(function(){
     }
 
 })
+
+$("#img-video").on('click', function(){
+    console.log('test');
+    $(this).fadeOut();
+    $("#youtube").html("<iframe class='video-youtube' height='375' src='https://www.youtube.com/embed/lMB-6uO64eU?autoplay=1' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+});
