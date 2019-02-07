@@ -440,7 +440,7 @@ if (isset($_POST['nom'])
     <div id="container-map" class="margin-top-3">
         <div style="width: 100%; overflow: hidden; height: 400px;">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yfGkjCUSW290aZpuuEaken12S8Fz_VSv"
-                height="400" frameborder="0" style="border:0; margin-top: -100px;" allowfullscreen></iframe>
+                height="400" frameborder="0" scrolling="no" style="border:0; margin-top: -100px;" allowfullscreen></iframe>
             </div>
         <div class="grid-container">
             <div class="grid-x align-justify">
