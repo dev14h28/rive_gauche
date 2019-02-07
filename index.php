@@ -260,20 +260,20 @@ if (isset($_POST['nom'])
     </div>
 </header>
 <div id="fauteuil-formululaire" class="opensans">
-    <div id="container-block-flotant">
-        <div id="block-info" class="text-center">
-            <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
-            <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
-            <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
-                vivre.</p>
-            <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
-                bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles
-                sur
-                les jardins et/ou surla Lys.</p>
-        </div>
-    </div>
     <img src="img/fauteuil.png" class="img-fauteuil">
     <div>
+        <div id="container-block-flotant">
+            <div id="block-info" class="text-center">
+                <img src="img/triangle/triangle-2.png" class="triangle-block-info" alt="">
+                <p class="text-uppercase block-info-txt1">appartements neufs<br> du 2 au 4 pièces avec parking.</p>
+                <p class="block-info-txt2">Des appartements conçus pour offrir un maximum d'espace dans les pièces à
+                    vivre.</p>
+                <p class="block-info-txt3">Les larges ouvertures et une luminosité optimale renforcent l'impression de
+                    bien-être. Ils disposent d'une terasse ou d'un balcon d'où l'on peut profiter de vues exceptionnelles
+                    sur
+                    les jardins et/ou surla Lys.</p>
+            </div>
+        </div>
         <div class="grid-x">
             <div id="youtube" class="cell medium-6 large-6 small-12">
                 <iframe class="video-youtube" height="375" src="https://www.youtube.com/embed/lMB-6uO64eU"

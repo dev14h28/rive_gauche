@@ -329,6 +329,7 @@ header {
         height: 500px;
     }
     #container-block-flotant {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -339,8 +340,8 @@ header {
         position: absolute;
         background-color: white;
         max-height: 850px;
-        width: 45%;
-        top: 1680px;
+        width: 95%;
+        top: -215px;
         border-radius: 16px;
         padding: 15px;
         display: flex;
@@ -570,6 +571,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    .triangle-block-info {
+        display: none;
+    }
     #block-info {
         background-image: url('../img/fauteuil.png');
         background-size: cover;
@@ -585,6 +589,7 @@ footer {
     }
     #container-block-flotant {
         width: 100%;
+        position: relative;
     }
     #block-info {
         width: 100%;
