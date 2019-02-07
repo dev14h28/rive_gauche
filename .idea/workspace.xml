@@ -21,11 +21,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="332" column="100" lean-forward="false" selection-start-line="332" selection-start-column="100" selection-end-line="332" selection-end-column="100" />
+            <state relative-caret-position="-1792">
+              <caret line="321" column="66" lean-forward="true" selection-start-line="321" selection-start-column="66" selection-end-line="321" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="409" column="25" lean-forward="true" selection-start-line="409" selection-start-column="25" selection-end-line="409" selection-end-column="25" />
+            <state relative-caret-position="439">
+              <caret line="717" column="40" lean-forward="false" selection-start-line="717" selection-start-column="40" selection-end-line="717" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -127,8 +127,8 @@
       <find>block-info</find>
       <find>container-block-flotant</find>
       <find>36px</find>
-      <find>en bord</find>
       <find>.red-checkbox</find>
+      <find>en bord</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/scss/app.scss" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/scss/app.scss" />
       </list>
     </option>
   </component>
@@ -249,7 +249,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40136000" />
+    <option name="totallyTimeSpent" value="40348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1551" y="23" width="1606" height="1057" extended-state="0" />
@@ -682,18 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="409" column="25" lean-forward="true" selection-start-line="409" selection-start-column="25" selection-end-line="409" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="332" column="100" lean-forward="false" selection-start-line="332" selection-start-column="100" selection-end-line="332" selection-end-column="100" />
+        <state relative-caret-position="-1792">
+          <caret line="321" column="66" lean-forward="true" selection-start-line="321" selection-start-column="66" selection-end-line="321" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -709,6 +701,14 @@
             <marker date="1549535961648" expanded="true" signature="5806:6142" ph="..." />
             <marker date="1549535961648" expanded="true" signature="5823:6125" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="717" column="40" lean-forward="false" selection-start-line="717" selection-start-column="40" selection-end-line="717" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

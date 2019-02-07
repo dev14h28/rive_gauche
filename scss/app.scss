@@ -713,6 +713,11 @@ footer {
             padding: 1rem!important;
         }
     }
+    form {
+        .text-right {
+            text-align: unset!important;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
