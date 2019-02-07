@@ -532,6 +532,10 @@ header {
     iframe {
         width: 100%;
         filter: grayscale(100%);
+        pointer-events: none;
+    }
+    iframe.clicked{
+        pointer-events: auto;
     }
 }
 
