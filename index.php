@@ -571,6 +571,5 @@ if (isset($_POST['nom'])
 
     <?php } ?>
 
-    ?>
 </body>
 </html>
