@@ -148,7 +148,9 @@ $margin-bottom-map: 275px;
     font-family: 'Prata', serif;
 }
 
-.px36{font-size:36px}
+.px36{font-size: 60px;
+    line-height: 54px;
+    letter-spacing: 5px;}
 .px24{font-size:24px}
 .px20{font-size:20px}
 
@@ -249,7 +251,7 @@ header {
         font-size: 20px;
         font-family: 'Prata', serif;
         color: #c2b181;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     #block-triangle-top {
         position: relative;

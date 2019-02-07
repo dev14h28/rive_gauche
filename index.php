@@ -249,9 +249,9 @@ if (isset($_POST['nom'])
             <div id="block-arbre">
                 <img src="img/arbre1.png" class="arbre-1">
                 <p class="text-center">
-                    <span class="prata font-color-or-fonce px24">Devenez propriétaire</span><br>
-                    <span class="prata px36 font-color-or font-bold">en bord<br>
-                        de Lys</span><br>
+                    <span class="prata font-color-or-fonce px24">Devenez propriétaire</span><br><br>
+                    <span class="prata px36 font-color-or">en bord<br>
+                        de Lys</span><br><br>
                     <span class="opensans">Prenez PLACE...<br>
                     Ici la nature vous accueille à bras ouvert</span>
                 </p>
